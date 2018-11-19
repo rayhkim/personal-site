@@ -21,6 +21,8 @@
   },
   "homepage": "https://github.com/v-wangg/personal-site#readme",
   "dependencies": {
+    "axios": "^0.18.0",
+    "bootstrap": "^4.1.3",
     "concurrently": "^4.1.0",
     "express": "^4.16.4",
     "mongoose": "^5.3.12",
