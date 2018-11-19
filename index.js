@@ -2,7 +2,7 @@ const express = require('express');
 
 const app = express();
 
-require('./routes/root')(app);
+// require('./routes/root')(app);
 
 if (process.env.NODE_ENV === "production") {
     app.use(express.static("client/build"));
