@@ -13,11 +13,9 @@ export default class AboutCarousel extends Component {
     }
 
     switchSection(direction) {
-        let newCategory = this.state.currentCategory + direction;
-
-        if (0 <= newCategory && newCategory < categories.length) {
-            this.setState({currentCategory: newCategory});
-        }
+        //added an extra categories.length to account for negative numbers
+        let newCategory = (this.state.currentCategory + direction + categories.length) % categories.length
+        this.setState({currentCategory: newCategory});
     }
 
     render() {

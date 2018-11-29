@@ -1,5 +1,5 @@
 :root {
-    --light-color: #fdfdfd;
+    --light-color: #f8f8f8;
     --dark-color: #0f0f0f;
 }
 
@@ -160,6 +160,7 @@ div.urbandance-image {
 
 
 div.spotify {
+    cursor: pointer;
     position: absolute;
     bottom: 20px;
     right: 20px;
@@ -170,6 +171,7 @@ div.spotify {
 }
 
 div.facebook {
+    cursor: pointer;
     position: absolute;
     bottom: 20px;
     right: 100px;
@@ -181,6 +183,7 @@ div.facebook {
 }
 
 div.github {
+    cursor: pointer;
     position: absolute;
     bottom: 20px;
     right: 180px;
@@ -189,4 +192,78 @@ div.github {
     border-radius: 50%;
     content:url(../img/github-logo.png);
     background: var(--light-color);
+}
+
+#projects-page-container {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+
+#projects-container {
+    position:absolute;
+    top: 120px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.unexpanded-project {
+    width: 450px;
+    height: 75px;
+    background: var(--dark-color);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.unexpanded-project:hover {
+    box-shadow: 2px 2px 2px 2px #aaa;
+}
+
+.expanded-project {
+    width: 450px;
+    height: 575px;
+    background: var(--dark-color);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.project-name {
+    color: var(--light-color);
+    display: flex;
+    justify-content: center;
+    font-family: Roboto, sans-serif;
+    margin: 20px;
+}
+
+.jigsawpuzzlesolver-image {
+    content:url(../img/jigsawpuzzlesolver.jpg);
+}
+
+.derivativecalculator-image {
+    content:url(../img/derivativecalculator.png);
+}
+
+.expanded-show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+}
+
+.project-image {
+    width:350px;
+    height:350px;
+    object-fit: cover;
+}
+
+.project-text {
+    color: var(--light-color);
+    margin: 16px;
+    font-family: Open Sans, sans-serif;
+    font-size: 16px;
 }

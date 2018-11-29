@@ -1,1 +1,5 @@
-The site is deployed at rayhkim.heroku.com
+The site is deployed at rayhkim.herokuapp.com
+Alternatively the github repo is at https://github.com/rayhkim/personal-site.git
+
+I decided to make the website a webapp using React after getting the okay from Jarrod. But because I started learning React
+very recently, it may not be following all the conventions.
