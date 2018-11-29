@@ -1,0 +1,192 @@
+:root {
+    --light-color: #fdfdfd;
+    --dark-color: #0f0f0f;
+}
+
+h1 {
+    font-family: Georgia, sans-serif;
+    font-weight: lighter;
+}
+
+a {
+    font-family: Roboto, sans-serif;
+    text-decoration: none;
+}
+
+#home-container {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+
+#top {
+    height: 50vh;
+    width: 100vw;
+    background: var(--light-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#bottom {
+    height: 50vh;
+    width: 100vw;
+    top: 50vh;
+    background: var(--dark-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#name {
+    color: var(--dark-color);
+    margin: 16px;
+    font-size: 96px;
+    letter-spacing: 4px;
+}
+
+#class-year {
+    color: var(--light-color);
+    margin: 16px;
+    font-size: 44px;
+    letter-spacing: 2px;
+}
+
+.navbar {
+    position:absolute;
+    margin: 8px;
+}
+
+.nav-link {
+    color: var(--dark-color);
+    font-size: 24px;
+    padding: 8px 20px 8px 20px;
+    margin: 12px 4px 8px 4px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+
+.nav-link:hover {
+    background: var(--dark-color);
+    color: var(--light-color);
+}
+
+#about-page-container {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+
+#about-container {
+    background: var(--dark-color);
+    border-radius: 20px;
+    position:absolute;
+    top: 80px;
+    height: 700px;
+    width: 700px;
+}
+
+#about-title {
+    color: var(--light-color);
+    font-family: Roboto, sans-serif;
+    letter-spacing: 2px;
+    margin: 24px 24px 4px 24px;
+    font-size: 64px;
+}
+
+#about-contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about-carousel {
+    width: 700px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.arrow {
+    color: var(--light-color);
+    font-size: 48px;
+    cursor: pointer;
+}
+
+.about-image-title {
+    color: var(--light-color);
+    font-family: Open Sans, sans-serif;
+    letter-spacing: 1px;
+    margin: 20px;
+}
+
+#carousel-content {
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-image {
+    width:450px;
+    height:450px;
+    object-fit: cover;
+}
+
+div.backpacking-image {
+    content:url(../img/backpacking-image.jpg);
+}
+
+div.badminton-image {
+    content:url(../img/badminton-image.jpg);
+}
+
+div.urbandance-image {
+    content:url(../img/urbandance-image.jpg);
+}
+
+
+
+div.spotify {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    content:url(../img/spotify-logo.jpeg);
+}
+
+div.facebook {
+    position: absolute;
+    bottom: 20px;
+    right: 100px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    content:url(../img/facebook-logo.png);
+    background: var(--light-color);
+}
+
+div.github {
+    position: absolute;
+    bottom: 20px;
+    right: 180px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    content:url(../img/github-logo.png);
+    background: var(--light-color);
+}
